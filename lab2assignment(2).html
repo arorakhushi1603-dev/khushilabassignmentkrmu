@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery with descprtin</title>
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+            text-align:center;
+            background-color:#f2f2f2;
+        }
+        .gallery{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            margin-top:30px;
+        }
+        .image-container {
+            background:white;
+            padding:15px;
+            border-radius:10px;
+            width:250px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.2)
+
+        }
+        img {
+            width:100%;
+            border-radius:8px;
+        }
+        p {
+            margin-top:10px;
+            color:#333;
+        }
+    </style>
+</head>
+<body>
+    <h1>My image gallery</h1>
+    <div class="gallery">
+    <div class="image-container">
+        <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvRS79JNmND4478e-ZZKg584PbDWIkZ6j97Q&s" alt="beautiful view">
+        <p>this image shows a peaceful seaside sunset scene with a orange sky ,trees and sun srtting in water. </p>
+
+    </div>
+    <div class="image-container">
+        <img
+        scr="https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg" alt="Tiger">
+        <p>this image shows a confident tiger waking in a forest area with orange grass</p>
+    </div>
+    </div>
+    
+</body>
+</html>
