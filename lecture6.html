@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keyup & Keydown Example</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background-color: aqua;
+      padding: 30px;
+    }
+
+    form {
+        background-color: rgb(158, 88, 158);
+      width: 300px;
+    }
+
+    input, textarea, select, button {
+       background-color: tomato; 
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 8px;
+    }
+
+    #output {
+      margin-top: 15px;
+      font-weight: bold;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Form with 5 Elements</h2>
+
+  <form id="myForm">
+    <!-- 5 elements -->
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <textarea placeholder="Message"></textarea>
+    <select>
+      <option>Select City</option>
+      <option>Delhi</option>
+      <option>Mumbai</option>
+    </select>
+  </form>
+
+  <div id="output">Type something...</div>
+
+  <script>
+    // Call form using querySelector
+    const form = document.querySelector("#myForm");
+
+    // keydown event
+    form.addEventListener("keydown", function () {
+      document.querySelector("#output").innerText = "Key is DOWN";
+    });
+
+    // keyup event
+    form.addEventListener("keyup", function () {
+      document.querySelector("#output").innerText = "Key is UP";
+    });
+  </script>
+
+</body>
+</html>
